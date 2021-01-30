@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		203B0C6225C5DACB008C4317 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203B0C6125C5DACB008C4317 /* Image.swift */; };
+		203B0C6925C5DAEF008C4317 /* CGRect+yPos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203B0C6825C5DAEF008C4317 /* CGRect+yPos.swift */; };
+		203B0C7025C5DB2F008C4317 /* DrawableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203B0C6F25C5DB2F008C4317 /* DrawableProtocol.swift */; };
+		203B0C7B25C5DD9B008C4317 /* PageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203B0C7A25C5DD9B008C4317 /* PageType.swift */; };
 		2048B07F25C0340500F48A56 /* ShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2048B07525C0340500F48A56 /* ShareKit.framework */; };
 		2048B08425C0340500F48A56 /* ShareKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2048B08325C0340500F48A56 /* ShareKitTests.swift */; };
 		2048B08625C0340500F48A56 /* ShareKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2048B07825C0340500F48A56 /* ShareKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2048B09225C036FF00F48A56 /* PDFCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2048B09125C036FF00F48A56 /* PDFCreator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +28,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		203B0C6125C5DACB008C4317 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		203B0C6825C5DAEF008C4317 /* CGRect+yPos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+yPos.swift"; sourceTree = "<group>"; };
+		203B0C6F25C5DB2F008C4317 /* DrawableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawableProtocol.swift; sourceTree = "<group>"; };
+		203B0C7A25C5DD9B008C4317 /* PageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageType.swift; sourceTree = "<group>"; };
 		2048B07525C0340500F48A56 /* ShareKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShareKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2048B07825C0340500F48A56 /* ShareKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareKit.h; sourceTree = "<group>"; };
 		2048B07925C0340500F48A56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2048B07E25C0340500F48A56 /* ShareKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShareKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2048B08325C0340500F48A56 /* ShareKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareKitTests.swift; sourceTree = "<group>"; };
 		2048B08525C0340500F48A56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2048B09125C036FF00F48A56 /* PDFCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFCreator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +60,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		203B0C6725C5DADD008C4317 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				203B0C6825C5DAEF008C4317 /* CGRect+yPos.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		203B0C6E25C5DB17008C4317 /* Drawables */ = {
+			isa = PBXGroup;
+			children = (
+				203B0C6F25C5DB2F008C4317 /* DrawableProtocol.swift */,
+				203B0C6125C5DACB008C4317 /* Image.swift */,
+			);
+			path = Drawables;
+			sourceTree = "<group>";
+		};
 		2048B06B25C0340500F48A56 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +98,10 @@
 		2048B07725C0340500F48A56 /* ShareKit */ = {
 			isa = PBXGroup;
 			children = (
+				2048B09125C036FF00F48A56 /* PDFCreator.swift */,
+				203B0C7A25C5DD9B008C4317 /* PageType.swift */,
+				203B0C6E25C5DB17008C4317 /* Drawables */,
+				203B0C6725C5DADD008C4317 /* Utils */,
 				2048B07825C0340500F48A56 /* ShareKit.h */,
 				2048B07925C0340500F48A56 /* Info.plist */,
 			);
@@ -147,6 +178,7 @@
 				TargetAttributes = {
 					2048B07425C0340500F48A56 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					2048B07D25C0340500F48A56 = {
 						CreatedOnToolsVersion = 12.3;
@@ -194,6 +226,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2048B09225C036FF00F48A56 /* PDFCreator.swift in Sources */,
+				203B0C7025C5DB2F008C4317 /* DrawableProtocol.swift in Sources */,
+				203B0C6925C5DAEF008C4317 /* CGRect+yPos.swift in Sources */,
+				203B0C6225C5DACB008C4317 /* Image.swift in Sources */,
+				203B0C7B25C5DD9B008C4317 /* PageType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +378,7 @@
 		2048B08A25C0340500F48A56 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = FS3B5ULP9R;
@@ -357,6 +395,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = continepedro.ShareKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +404,7 @@
 		2048B08B25C0340500F48A56 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = FS3B5ULP9R;
@@ -389,6 +429,7 @@
 		2048B08D25C0340500F48A56 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FS3B5ULP9R;
 				INFOPLIST_FILE = ShareKitTests/Info.plist;
@@ -407,6 +448,7 @@
 		2048B08E25C0340500F48A56 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FS3B5ULP9R;
 				INFOPLIST_FILE = ShareKitTests/Info.plist;

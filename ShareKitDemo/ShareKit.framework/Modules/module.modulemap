@@ -1,0 +1,11 @@
+framework module ShareKit {
+  umbrella header "ShareKit.h"
+
+  export *
+  module * { export * }
+}
+
+module ShareKit.Swift {
+    header "ShareKit-Swift.h"
+    requires objc
+}
