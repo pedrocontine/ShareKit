@@ -17,19 +17,19 @@ public class PDFCreator {
     var pageType: PageType
     var elementsInPage: Int
     var margin: CGFloat
-    var metadata: [CFString: String]
+    var title: String
     
     // Initializer for images
     public init(_ images: [UIImage],
                 pageType: PageType,
                 elementsInPage: Int,
                 margin: CGFloat,
-                metadata: [CFString: String] = [:]) {
+                title: String) {
         
         self.pageType = pageType
         self.elementsInPage = elementsInPage
         self.margin = margin
-        self.metadata = metadata
+        self.title = title
         
         self.elementsToDraw = images.map { image -> Image in
             Image(image)
@@ -38,7 +38,6 @@ public class PDFCreator {
     
     public func create() -> PDFDocument? {
         let format = UIGraphicsPDFRendererFormat()
-        format.documentInfo = metadata as [String: Any]
 
         let renderer = UIGraphicsPDFRenderer(bounds: rect, format: format)
         let data = renderer.pdfData { (context) in
@@ -47,7 +46,12 @@ public class PDFCreator {
             }
         }
         
-        return PDFKit.PDFDocument(data: data)
+        let document = PDFKit.PDFDocument(data: data)
+        var metadata = document?.documentAttributes!
+        metadata?[PDFDocumentAttribute.titleAttribute] = title
+        document?.documentAttributes = metadata
+        
+        return document
     }
     
     public func display(in view: UIView) {

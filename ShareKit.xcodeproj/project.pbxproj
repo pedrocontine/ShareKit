@@ -15,6 +15,7 @@
 		2048B08425C0340500F48A56 /* ShareKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2048B08325C0340500F48A56 /* ShareKitTests.swift */; };
 		2048B08625C0340500F48A56 /* ShareKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2048B07825C0340500F48A56 /* ShareKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2048B09225C036FF00F48A56 /* PDFCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2048B09125C036FF00F48A56 /* PDFCreator.swift */; };
+		2091D3A025C6252B00181493 /* ShareManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2091D39F25C6252B00181493 /* ShareManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		2048B08325C0340500F48A56 /* ShareKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareKitTests.swift; sourceTree = "<group>"; };
 		2048B08525C0340500F48A56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2048B09125C036FF00F48A56 /* PDFCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFCreator.swift; sourceTree = "<group>"; };
+		2091D39F25C6252B00181493 /* ShareManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		203B0C6725C5DADD008C4317 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				203B0C7A25C5DD9B008C4317 /* PageType.swift */,
 				203B0C6825C5DAEF008C4317 /* CGRect+yPos.swift */,
 			);
 			path = Utils;
@@ -98,10 +101,8 @@
 		2048B07725C0340500F48A56 /* ShareKit */ = {
 			isa = PBXGroup;
 			children = (
-				2048B09125C036FF00F48A56 /* PDFCreator.swift */,
-				203B0C7A25C5DD9B008C4317 /* PageType.swift */,
-				203B0C6E25C5DB17008C4317 /* Drawables */,
-				203B0C6725C5DADD008C4317 /* Utils */,
+				2091D39E25C6251F00181493 /* ShareManager */,
+				2091D39D25C624FF00181493 /* PDFCreator */,
 				2048B07825C0340500F48A56 /* ShareKit.h */,
 				2048B07925C0340500F48A56 /* Info.plist */,
 			);
@@ -115,6 +116,24 @@
 				2048B08525C0340500F48A56 /* Info.plist */,
 			);
 			path = ShareKitTests;
+			sourceTree = "<group>";
+		};
+		2091D39D25C624FF00181493 /* PDFCreator */ = {
+			isa = PBXGroup;
+			children = (
+				2048B09125C036FF00F48A56 /* PDFCreator.swift */,
+				203B0C6E25C5DB17008C4317 /* Drawables */,
+				203B0C6725C5DADD008C4317 /* Utils */,
+			);
+			path = PDFCreator;
+			sourceTree = "<group>";
+		};
+		2091D39E25C6251F00181493 /* ShareManager */ = {
+			isa = PBXGroup;
+			children = (
+				2091D39F25C6252B00181493 /* ShareManager.swift */,
+			);
+			path = ShareManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +248,7 @@
 				2048B09225C036FF00F48A56 /* PDFCreator.swift in Sources */,
 				203B0C7025C5DB2F008C4317 /* DrawableProtocol.swift in Sources */,
 				203B0C6925C5DAEF008C4317 /* CGRect+yPos.swift in Sources */,
+				2091D3A025C6252B00181493 /* ShareManager.swift in Sources */,
 				203B0C6225C5DACB008C4317 /* Image.swift in Sources */,
 				203B0C7B25C5DD9B008C4317 /* PageType.swift in Sources */,
 			);

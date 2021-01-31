@@ -10,14 +10,27 @@ import ShareKit
 
 class ViewController: UIViewController {
 
+    private var pdfCreator: PDFCreator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let images: [UIImage] = [loadTestImage(named: "document", ext: "JPG"),
                                  loadTestImage(named: "image", ext: "png")]
         
-        let pdfCreator = PDFCreator(images, pageType: .regular, elementsInPage: 2, margin: 30)
-        pdfCreator.display(in: view)
+        pdfCreator = PDFCreator(images, pageType: .regular, elementsInPage: 2, margin: 30, title: "Documents")
+    }
+    
+    @IBAction func showPDFPreview() {
+        pdfCreator?.display(in: view)
+    }
+    
+    @IBAction func shareButtonPressed() {
+        guard let itemsToShare = pdfCreator?.create()?.dataRepresentation() else {
+            return
+        }
+        
+        ShareView.present(in: self, itemsToShare: [itemsToShare], removeShareOptions: [])
     }
     
     func loadTestImage(named: String, ext: String) -> UIImage {

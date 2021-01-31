@@ -16,8 +16,8 @@
 		2048B0AB25C0387200F48A56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2048B0AA25C0387200F48A56 /* Assets.xcassets */; };
 		2048B0AE25C0387200F48A56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2048B0AC25C0387200F48A56 /* LaunchScreen.storyboard */; };
 		2048B0B725C0518500F48A56 /* document.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 2048B0B625C0518500F48A56 /* document.JPG */; };
-		2091D33725C6114F00181493 /* ShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2091D33525C6113200181493 /* ShareKit.framework */; };
-		2091D33825C6114F00181493 /* ShareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2091D33525C6113200181493 /* ShareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2091D3AF25C62C1F00181493 /* ShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2091D3AD25C62C1C00181493 /* ShareKit.framework */; };
+		2091D3B025C62C1F00181493 /* ShareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2091D3AD25C62C1C00181493 /* ShareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,7 +27,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2091D33825C6114F00181493 /* ShareKit.framework in Embed Frameworks */,
+				2091D3B025C62C1F00181493 /* ShareKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,7 +46,7 @@
 		2048B0AD25C0387200F48A56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2048B0AF25C0387200F48A56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2048B0B625C0518500F48A56 /* document.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = document.JPG; sourceTree = "<group>"; };
-		2091D33525C6113200181493 /* ShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareKit.framework; sourceTree = "<group>"; };
+		2091D3AD25C62C1C00181493 /* ShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2091D33725C6114F00181493 /* ShareKit.framework in Frameworks */,
+				2091D3AF25C62C1F00181493 /* ShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +64,7 @@
 		2048B09525C0386E00F48A56 = {
 			isa = PBXGroup;
 			children = (
-				2091D33525C6113200181493 /* ShareKit.framework */,
+				2091D3AD25C62C1C00181493 /* ShareKit.framework */,
 				2048B0A025C0386F00F48A56 /* ShareKitDemo */,
 				2048B09F25C0386F00F48A56 /* Products */,
 			);
